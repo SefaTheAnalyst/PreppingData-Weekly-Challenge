@@ -1,6 +1,6 @@
 SELECT a.[Passed Subjects],b.[Student's Avg Score],a.[Student ID],Gender
 	FROM
---converting columns to rows using unpivot function
+/**converting columns to rows using unpivot function**/
 	(SELECT [Student ID],COUNT([Student ID]) AS [Passed Subjects] from
 	(SELECT [Student ID], Maths,English,Spanish,Science,Art,History,Geography
 FROM PreppingData.dbo.preppingDataWk3) Scores
