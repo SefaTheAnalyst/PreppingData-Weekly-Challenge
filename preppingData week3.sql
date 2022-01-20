@@ -18,5 +18,5 @@ GROUP BY [Student ID]) a,
 FROM PreppingData.dbo.preppingDataWk2 AS wk1
 	JOIN PreppingData.dbo.preppingDataWk3 AS wk3
 	ON wk1.id = wk3.[Student ID]
-	WHERE (Maths+English+Spanish+Science+Art+History+Geography)/7 >=75 ) b
+	WHERE (Maths+English+Spanish+Science+Art+History+Geography)/7 >=75 ) b	
 WHERE a.[Student ID] = b.id
